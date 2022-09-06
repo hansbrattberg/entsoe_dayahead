@@ -5,7 +5,7 @@ import moment from 'moment'
 
 // TODO
 // verify the date according to time zones and summer/winder
-// more price areas
+// Test DE, UK! More price areas, https://transparency.entsoe.eu/content/static_content/Static%20content/web%20api/Guide.html
 // split function and return array of days with prices for each hour
 
 function get_day_ahead_prices_including_today(securityToken, price_area) {
@@ -14,6 +14,18 @@ function get_day_ahead_prices_including_today(securityToken, price_area) {
     priceAreaCode['SE2'] = '10Y1001A1001A45N'
     priceAreaCode['SE3'] = '10Y1001A1001A46L'
     priceAreaCode['SE4'] = '10Y1001A1001A47J'
+
+    priceAreaCode['NO1'] = '10YNO-1--------2'
+    priceAreaCode['NO2'] = '10YNO-2--------T'
+    priceAreaCode['NO3'] = '10YNO-3--------J'
+    priceAreaCode['NO4'] = '10YNO-4--------9'
+    priceAreaCode['NO5'] = '10Y1001A1001A48H'
+
+    priceAreaCode['DK1'] = '10YDK-1--------W'
+    priceAreaCode['DK1'] = '10YDK-2--------M'
+
+    priceAreaCode['FI'] = '10YFI-1--------U'
+
     const documentType = 'A44'   // Price Document
 
     const in_Domain = priceAreaCode[price_area]
