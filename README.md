@@ -1,3 +1,6 @@
+An example code hon how to retreive the day ahead prices from the entsoe rest api
+Use it it as you wish!
+
 # entsoe_dayahead
 
 node start.mjs \<securityToken\>
